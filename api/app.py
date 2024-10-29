@@ -4,8 +4,6 @@ import requests
 import os
 
 app = Flask(__name__)
-CORS(app)  # Enable CORS for all routes
-
 
 @app.route('/api/seattle_weather')
 def weather():
@@ -20,6 +18,3 @@ def weather():
     else:
         return jsonify({'message': 'Failed to fetch weather data'}), 500
 
-
-if __name__ == '__main__':
-    app.run(debug=True, port=5000)
