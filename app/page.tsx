@@ -1,4 +1,5 @@
-'use client'
+"use client";
+
 
 import { useState, useEffect } from 'react';
 import Jumbotron from './components/Jumbotron';
@@ -8,14 +9,15 @@ import Objective from './components/Objective';
 import BodyContent from './components/BodyContent';
 import Conclusion from './components/Conclusion';
 
+
 export default function Home() {
-  const [message, setMessage] = useState('');
+  const [message, setMessage] = useState("");
 
   useEffect(() => {
-    console.log("Hello")
-    fetch('http://127.0.0.1:5000/api/seattle_weather')
-        .then(res => res.json())
-        .then(data => setMessage(data.message));
+    console.log("Hello");
+    fetch("/api/seattle_weather")
+      .then((res) => res.json())
+      .then((data) => setMessage(data.message));
   }, []);
 
   return (
@@ -28,5 +30,6 @@ export default function Home() {
           <Divider></Divider>
           <Conclusion></Conclusion>
       </div>
+
   );
 }
