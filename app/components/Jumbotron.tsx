@@ -70,7 +70,7 @@ export default function Jumbotron() {
       </nav>
 
       <div className="bg-red-500 px-6 py-20 text-center shadow-lg text-black">
-        <h1 className="mb-6 text-5xl font-bold">Seattle Climate Resiliency</h1>
+        <h1 className="mb-6 text-5xl font-bold">Seattle Climate Justice</h1>
       </div>
     </header>
   );
