@@ -11,12 +11,14 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "chart.js": "^4.4.6",
+    "env": "^0.0.2",
+    "flask": "^0.2.10",
     "next": "15.0.1",
     "react": "19.0.0-rc-69d4b800-20241021",
+    "react-chartjs-2": "^5.2.0",
     "react-dom": "19.0.0-rc-69d4b800-20241021",
-    "tw-elements": "^2.0.0",
-    "env": "^0.0.2",
-    "flask": "^0.2.10"
+    "tw-elements": "^2.0.0"
   },
   "devDependencies": {
     "@types/node": "^20",
