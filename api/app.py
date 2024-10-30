@@ -10,9 +10,11 @@ def weather():
     data_directory = os.path.join(os.path.dirname(__file__), 'data')
     combined_data = []
 
-    for filename in os.listdir(data_directory):
-        path = os.path.join(data_directory, filename)
-        df = pd.read_csv(path, usecols=['temp'])
-        combined_data.append(df['temp'].tolist())
-    
+    for dirpath, dirnames, filenames in os.walk(data_directory):
+        csv_files = sorted([f for f in filenames if f.endswith('.csv')])
+        for filename in csv_files:
+            path = os.path.join(dirpath, filename)
+            df = pd.read_csv(path, usecols=['temp'])
+            combined_data.append(df['temp'].tolist())
+        
     return jsonify(combined_data)
