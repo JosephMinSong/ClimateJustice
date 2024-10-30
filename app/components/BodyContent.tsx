@@ -48,6 +48,12 @@ export default function BodyContent() {
             </p>
           </div>
         </div>
+
+        <div className="flex justify-center items-center w-full">
+          <div className="w-1/2 border rounded-lg p-8 flex justify-center items-center h-64">
+          <img src="/screenshots/heatwave_analysis.jpg" alt="Additional Data" className="w-3/4 object-cover h-full rounded-lg" />
+          </div>
+        </div>
     </section>
     );
 };
