@@ -16,8 +16,7 @@
     "react-dom": "19.0.0-rc-69d4b800-20241021",
     "tw-elements": "^2.0.0",
     "env": "^0.0.2",
-    "flask": "^0.2.10",
-    "react-chartjs-2": "^5.2.0"
+    "flask": "^0.2.10"
   },
   "devDependencies": {
     "@types/node": "^20",
