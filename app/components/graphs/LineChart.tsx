@@ -49,8 +49,8 @@ const LineChart = () => {
     label: `Data ${2015 + index}`,
     data: data,
     fill: false,
-    backgroundColor: `rgba(${75 + index * 30}, ${192}, ${192}, 0.6)`,
-    borderColor: `rgba(${75 + index * 30}, ${192}, ${192}, 1)`,
+    backgroundColor: `rgba(${30 + index * 50}, ${192}, ${192}, 0.6)`,
+    borderColor: `rgba(${30 + index * 50}, ${192}, ${192}, 1)`,
     tension: 0.1,
   }));
 
