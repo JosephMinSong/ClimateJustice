@@ -15,6 +15,7 @@ export default function BodyContent() {
             Seattle Fire responses. 380 dispatched calls on June 27 and 563 on June 28. There were 118 calls due to heat-related emergencies. 
           </p>
         </div>
+        </div>
         <div className="grid grid-cols-1 mt-6 md:grid-cols-2 gap-8 items-center">
           <div className="border rounded-lg p-8 flex justify-center items-center h-64">
           <img src="/screenshots/confusion_matrix.jpg" alt="Additional Data" className="w-3/4 object-cover h-full rounded-lg" />
@@ -47,7 +48,7 @@ export default function BodyContent() {
             </p>
           </div>
         </div>
-      </section>
+    </section>
     );
 };
 

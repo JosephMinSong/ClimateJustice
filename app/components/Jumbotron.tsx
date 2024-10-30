@@ -2,7 +2,7 @@ export default function Jumbotron() {
   return (
     <header>
       <nav
-        className="relative flex w-full items-center justify-between bg-body-dark py-2 shadow-dark-mild lg:flex-wrap lg:justify-start lg:py-4"
+        className="relative flex w-full items-center justify-between bg-black py-2 shadow-dark-mild lg:flex-wrap lg:justify-start lg:py-4"
         data-twe-navbar-ref
       >
         <div className="flex w-full flex-wrap items-center justify-between px-3">
