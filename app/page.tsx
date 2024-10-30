@@ -1,5 +1,3 @@
-"use client";
-
 import LineChart from "@/public/components/LineChart";
 
 export default function Home() {
