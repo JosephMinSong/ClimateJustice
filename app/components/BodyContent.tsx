@@ -1,30 +1,21 @@
+import LineChart from "./graphs/LineChart";
+
 export default function BodyContent() {
-    return (
-      <section className="mx-auto my-16 max-w-5xl px-4">
-        <div className="grid grid-cols-1 mb-6 md:grid-cols-2 gap-8 items-center">
-          <div className="border rounded-lg p-8 flex justify-center items-center h-64">
-            <p className="text-gray-500">Weather Data Image</p>
-          </div>
-          <div>
-            <p className="text-neutral-800">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras congue dui a tellus volutpat, sit amet
-              vulputate nibh placerat. Vestibulum finibus iaculis lacus, vitae aliquam magna auctor ac. In porta
-              quis ligula a laoreet...
-            </p>
-          </div>
+  return (
+    <section className="mx-auto my-16 max-w-5xl px-4">
+      <div className="grid grid-cols-1 mb-6 md:grid-cols-2 gap-8 items-center">
+        <div className="border rounded-lg p-8 flex justify-center items-center h-64">
+          <LineChart />
         </div>
-    
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-          <div>
-            <p className="text-neutral-800">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras congue dui a tellus volutpat, sit amet
-              vulputate nibh placerat. Vestibulum finibus iaculis lacus, vitae aliquam magna auctor ac...
-            </p>
-          </div>
-          <div className="border rounded-lg p-8 flex justify-center items-center h-64">
-            <p className="text-gray-500">Population Data Image</p>
-          </div>
+        <div>
+          <p className="text-neutral-800">
+            2021 saw an unprecedented heat wave - something Seattle has little experience with managing. The city saw record breaking
+            numbers, both in temperature readings and number of heat-related emergencies. June 26 - 28 set the records for the hottest temperatures
+            ever in the City of Seattle and the most consecutive days over 100 degrees. It also set the record for most number of 
+            Seattle Fire responses. 380 dispatched calls on June 27 and 563 on June 28. There were 118 calls due to heat-related emergencies. 
+          </p>
         </div>
-      </section>
-    );
-};
+      </div>
+    </section>
+  );
+}

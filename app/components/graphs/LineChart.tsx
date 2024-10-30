@@ -10,11 +10,6 @@ interface MonthDays {
   [key: string]: number;
 }
 
-interface DataSet {
-  label: string;
-  data: number[];
-}
-
 const juneDays = 30;
 const julyDays = 31;
 const augustDays = 31;
@@ -31,10 +26,12 @@ const LineChart = () => {
   const [tempData, setTemps] = useState([]);
 
   useEffect(() => {
-    console.log("Hello");
     fetch("/api/seattle_weather")
       .then((res) => res.json())
-      .then((data) => setTemps(data));
+      .then((data) => {
+        console.log(data);
+        setTemps(data)
+      });
   }, []);
 
   const labels: string[] = [];
@@ -49,8 +46,8 @@ const LineChart = () => {
     label: `Data ${2015 + index}`,
     data: data,
     fill: false,
-    backgroundColor: `rgba(${75 + index * 30}, ${192}, ${192}, 0.6)`,
-    borderColor: `rgba(${75 + index * 30}, ${192}, ${192}, 1)`,
+    backgroundColor: `rgba(${30 + index * 50}, ${192}, ${192}, 0.6)`,
+    borderColor: `rgba(${30 + index * 50}, ${192}, ${192}, 1)`,
     tension: 0.1,
   }));
 

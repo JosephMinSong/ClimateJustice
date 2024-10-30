@@ -8,6 +8,7 @@ import Team from './components/Team';
 import Objective from './components/Objective';
 import BodyContent from './components/BodyContent';
 import Conclusion from './components/Conclusion';
+import Challenge from './components/ChallengeStatement';
 
 
 export default function Home() {
@@ -19,7 +20,7 @@ export default function Home() {
           <Divider></Divider>
           <BodyContent></BodyContent>
           <Divider></Divider>
-          <Conclusion></Conclusion>
+          <Challenge></Challenge>
       </div>
 
   );
