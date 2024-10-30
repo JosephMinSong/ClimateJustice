@@ -11,21 +11,21 @@ export default function Challenge() {
         <br></br>
         <p className="text-black">
             Our implemention is as follows:
-            <ul>
-                <li>
-                    Model Development: Continue refining our model with up-to-date data to improve accuracy and integrate with local alert systems.
-                </li>
-                <li>
-                    Shelter Infrastructure: Identify accessible locations for shelter infrastructure, prioritizing areas with high exposure and high population of vulnerable people to extreme temperatures.
-                </li>
-                <li>
-                    Community Partnerships: Partner with community organizations to distribute heat wave alerts and guide the setup of temporary cooling shelters if an extended heatwave is predicted.
-                </li>
-                <li>
-                    Sustainability and Scale-Up: Develop a framework for scalability to other regions and adaptability for other extreme weather events - such as freeze waves.
-                </li>
-            </ul>
         </p>
+        <ul>
+            <li>
+                Model Development: Continue refining our model with up-to-date data to improve accuracy and integrate with local alert systems.
+            </li>
+            <li>
+                Shelter Infrastructure: Identify accessible locations for shelter infrastructure, prioritizing areas with high exposure and high population of vulnerable people to extreme temperatures.
+            </li>
+            <li>
+                Community Partnerships: Partner with community organizations to distribute heat wave alerts and guide the setup of temporary cooling shelters if an extended heatwave is predicted.
+            </li>
+            <li>
+                Sustainability and Scale-Up: Develop a framework for scalability to other regions and adaptability for other extreme weather events - such as freeze waves.
+            </li>
+        </ul>
       </section>
     );
   };
