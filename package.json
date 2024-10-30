@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "flask-dev": "python3 -m flask --app api/app run -p 5328",
+    "flask-dev": "python -m flask --app api/app run -p 5328",
     "next-dev": "next dev",
     "dev": "concurrently \"npm run next-dev\" \"npm run flask-dev\"",
     "build": "next build",
@@ -14,7 +14,10 @@
     "next": "15.0.1",
     "react": "19.0.0-rc-69d4b800-20241021",
     "react-dom": "19.0.0-rc-69d4b800-20241021",
-    "tw-elements": "^2.0.0"
+    "tw-elements": "^2.0.0",
+    "env": "^0.0.2",
+    "flask": "^0.2.10",
+    "react-chartjs-2": "^5.2.0"
   },
   "devDependencies": {
     "@types/node": "^20",

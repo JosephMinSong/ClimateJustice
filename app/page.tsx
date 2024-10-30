@@ -11,15 +11,6 @@ import Conclusion from './components/Conclusion';
 
 
 export default function Home() {
-  const [message, setMessage] = useState("");
-
-  useEffect(() => {
-    console.log("Hello");
-    fetch("/api/seattle_weather")
-      .then((res) => res.json())
-      .then((data) => setMessage(data.message));
-  }, []);
-
   return (
       <div>
           <Jumbotron></Jumbotron>
